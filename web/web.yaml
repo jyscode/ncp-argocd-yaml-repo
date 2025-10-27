@@ -27,9 +27,11 @@ metadata:
   name: apache
   namespace: web
 spec:
+  type: NodePort
   selector:
     app: apache
   ports:
   - port: 8000
     targetPort: 80
     protocol: TCP
+    nodePort: 30080
