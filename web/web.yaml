@@ -18,6 +18,8 @@ spec:
         image: argo-repo.kr.ncr.ntruss.com/apache:latest # ← sed로 자동 변경되는 라인
         ports:
         - containerPort: 80
+      imagePullsecrets:
+      - name: regcred
 ---
 apiVersion: v1
 kind: Service
