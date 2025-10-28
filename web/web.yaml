@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: apache
-        image: argo-repo.kr.ncr.ntruss.com/apache:20251028-acc71e7
+        image: argo-repo.kr.ncr.ntruss.com/apache:20251028-cffeded
         ports:
         - containerPort: 80
       imagePullSecrets:
